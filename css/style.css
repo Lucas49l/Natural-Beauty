@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding-top: 400px;
+}
+
+header {
+  width: 100%;
+  padding: 60px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .5s;
+}
+
+header.rolagem {
+  height: 13.7em;
+  background-color: #f8f3f0;
+  padding: 20px 4%;
+  top: -80px;
+}
+
+.container {
+  max-width: 940px;
+  margin: auto;
+}
+
+.linha-personalizada {
+  border: 0;                   
+  height: 2px;                 
+  background-color: #b690a2;      
+  margin: 20px 0;  
+  position: relative; 
+  margin-top: -15px;
+}  
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header.rolagem a, header.rolagem i {
+  color: #681b3f;
+}
+
+.logo {
+  width: 210px;
+  height: auto;
+  position: relative;
+  top: 20px;
+}
+
+header i {
+  font-size: 50px;
+  color: #fff;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header ul li a {
+  font-family: 'Poppins', sans-serif;;
+  color: #80094e;
+  text-decoration: none;
+  font-size: 23px;
+  position: relative;
+  top: 30px;
+}
+
+.btn-contato button {
+  width: 110px;
+  height: 40px;
+  border: 0;
+  background-color: #551030;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s;
+  font-size: 23px;
+   position: relative;
+  top: 30px;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url(../imagens/header.png);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #55022a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -8.8em ;
+}
+
+.banner h1 {
+  font-size: 4em;
+  margin-top: -350px;
+}
+
+h1 {
+
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.banner h1 span {
+  color: #550631;
+}
+
+.p1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #55022a;
+  height: 100vh;
+  margin-top: -720px;
+  font-size: 27px;
+}
+
+footer {
+  text-align: center;
+  background-image: url(../imagens/footer.jpg);
+  width: 100%;
+  height: 200px;
+  padding: 25px 0;
+}
+
+.logofooter {
+  width: 150px;
+  height: auto;
+}
+
+.copy {
+  color: #ffffff;
+  font-size: 12px;
+  left: 0;
+}

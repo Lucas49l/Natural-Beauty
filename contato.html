@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/contato.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="shortcut icon" href="imagens/icon/2/favicon.ico" type="image/x-icon">
+    <title>Natural Beauty - Contate-nos</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+                <a href="index.html"><img src="imagens/Logo oficial.png" alt="Logo da Estética" class="logo"></a>
+              <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="produtos.html">Produto</a></li>
+                    <li><a href="historia.html">Sobre</a></li>
+                </ul>
+              </nav>
+              <div class="btn-contato">
+                  <a href="contato.html"><button>Contato</button></a>
+              </div>
+            </div>
+            <hr class="linha-personalizada">
+        </div>
+    </header>
+        <main>
+            <form action="">
+
+              
+                <label for="nomeSobrenome">Nome e sobrenome</label>
+                <input type="text" id="text" class="inputs-padrao" required>
+
+                <label for="">Telefone</label>
+                <input type="tel" id="tel" class="inputs-padrao" required placeholder="(DDD) xxxxx-xxxx">
+
+                <label for="">E-mail</label>
+                <input type="email" id="email" class="inputs-padrao" required placeholder="seuEmail@dominio.com">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="" id="mensagem" class="inputs-padrao" cols="" rows="10"></textarea>
+
+                <fieldset id="cpc">
+
+                    <legend>Como prefere o nosso contato:</legend>
+
+                    <label for="radio-email"><input type="radio" name="contato" id="radio-email">E-mail</label>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Telefone</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp"
+                            checked>Whatsapp</label>
+
+                </fieldset>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+
+            </form>
+
+            <div id="insta">
+                <a href="https://www.instagram.com/naturalbeauty.clinic/"> <img src="imagens/contato/Instagram-logo.png"
+                        alt="Logo do instagram" class="imagem"></a>
+                <a href="https://www.instagram.com/naturalbeauty.clinic/" class="link"></a>
+            </div>
+        </main>
+
+        <footer>
+            <img src="imagens/Logo oficial.png" alt="logo-footer" class="logofooter">
+            <p class="copy">&#169;Copyright Natural Beauty</p>
+          </footer>
+        <script src="js/jquery-1.4.1.min.js"></script>
+        <script src="js/menu-rolagem.js"></script>
+</body>
+</html>

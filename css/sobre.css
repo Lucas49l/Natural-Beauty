@@ -1,0 +1,238 @@
+@font-face {
+    font-family:"Brasika";
+    src: url(../fontes/brasika-display2.otf);
+}
+
+@font-face {
+    font-family:"Open";
+    src: url(../fontes/open-sauce-sans-medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#E8D6CB, #FFFDED, #E8D6CB);
+    opacity: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 940px;
+    margin: auto;
+}
+  
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 1;
+}
+  
+header.rolagem {
+    height: 13.7em;
+    background-color:#E8D6CB;
+    padding: 20px 4%;
+    top: -80px;
+}
+  
+.logo {
+    width: 210px; /* Defina a largura desejada */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+    position: relative;
+    top: 20px;
+}
+  
+header ul {
+    list-style-type: none;
+}
+  
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+  
+header ul li a {
+    color: #80094e;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+    top: 30px;
+}
+  
+.btn-contato button {
+    width: 110px;
+    height: 40px;
+    border: 0;
+    background-color: #620c2f;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 23px;
+    position: relative;
+    top: 30px;
+}
+  
+.linha-personalizada {
+    border: 0;                   
+    height: 2px;                 
+    background-color: #b690a2;      
+    margin: 20px 0;  
+    position: relative; 
+    margin-top: -15px;
+}
+ 
+main {
+    width: 920px;
+    margin: auto;
+    margin-top: 16.2em;
+    padding-bottom: 2em;
+}
+
+.fundo {
+    width: 920px; 
+    height: 38em;
+    display: flex;
+    position: relative;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.historia {
+    background-image: url(../imagens/sobre/fundoHistoria.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: -10px 10px 20px #5d2e46, 10px 10px 20px #5d2e46;
+    border-radius: 10%;
+}
+
+.missao {
+    background-image: url(../imagens/sobre/fundoMissao.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: -10px 10px 20px #5d2e46, 10px 10px 20px #5d2e46;
+    border-radius: 10%;
+}
+
+.visao {
+    background-image: url(../imagens/sobre/fundoVisao.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: -10px 10px 20px #5d2e46, 10px 10px 20px #5d2e46;
+    border-radius: 10%;
+}
+
+h1.titulo {
+    position: relative;
+    font: 3em "Brasika";
+    color: #5d2e46;
+    width: 13.5em;
+    top: 2em;
+    left: 0px;
+}
+
+p.texto {
+    position: relative;
+    font: 20px "Open";
+    color: #5d2e46;
+    text-align: justify;
+    width: 70%;
+    height: 43%;
+    top: 5em;
+    left: 0;
+}
+
+.setas {
+    display: flex;
+    position: absolute;
+    bottom: 0.3em;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.setas img {
+    width: 90%;
+}
+
+.setas .esquerda {
+    transition: transform 1s ease, opacity 1s, filter 1s;
+    filter: drop-shadow(10px 10px 2px #5d2e46);
+}
+
+.setas .direita {
+    transition: transform 1s ease, opacity 1s, filter 1s;
+    filter: drop-shadow(-10px 10px 2px #5d2e46);
+}
+
+.setas .esquerda:hover {
+    transform: scale(1.1) translateX(-15px);
+}
+
+.setas .direita:hover {
+    transform: scale(1.1) translateX(15px);
+}
+
+.prevNex {
+    display: flex;
+    position: absolute;
+    width: 70%;
+    height: 50px;
+    bottom: 12em;
+    justify-content: space-between;
+}
+
+.prevNex p {
+    position: relative;
+    color: #5d2e46;
+    font: 20px "Brasika";
+    margin: 0 -75px 0 -90px;
+    left: 0;
+    top: 9em;
+    opacity: 0.1; 
+    visibility: hidden;
+    transition: opacity 2s, visibility 2s;
+}
+
+.setas .esquerda:hover ~ .prevNex .voltar,
+.setas .direita:hover ~ .prevNex .avancar {
+    opacity: 1;
+    visibility: visible; 
+}
+
+.ativo {
+    opacity: 1;
+}
+   
+footer {
+    text-align: center;
+    background-image: url(../imagens/footer.jpg);
+    width: 100%; 
+    height: 200px; 
+    padding: 25px 0;
+}
+  
+.logofooter {
+    width: 150px; 
+    height: auto;
+}
+  
+.copy {
+    color: #ffffff;
+    font-size: 12px;
+    left: 0;
+}
